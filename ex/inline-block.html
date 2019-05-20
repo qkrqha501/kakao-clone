@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Inline Example</title>
+        <style>
+            .box {
+                background-color: red;
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                display: inline-block;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div class="box">block은 element가 크기와 상관없이 그 옆에 다른 element가 위치하는 것을 허용하지 않음. 무엇이든 그 밑으로 위치하게 됨</div>
+        <div class="box">display를 inline-block으로 설정하는 경우 옆에 위치!</div>
+        <div class="box">display를 inline으로 설정하는 경우 박스의 모든 property 설정값을 지움. 이건 박스가 아니라 텍스트 처럼 적용이 됨(높이, 폭 없고 컨텐츠의 길이만 존재!)</div>
+        <span class="box">1.</span>
+        <span class="box">1.</span>
+        <span class="box">1.</span>
+      </body>
+</html>

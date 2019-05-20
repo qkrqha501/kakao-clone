@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Position</title>    
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                height: 400%;
+                background-color: red;
+
+            }
+            /*
+            #boxOne {
+                height:300px;
+                width: 300px;
+                background-color: yellow;
+                position:static;
+            }
+            #boxTwo {
+                height:300px;
+                width: 100%;
+                background-color: green;
+                position:fixed;
+                bottom: 30px;
+                right:0px;
+            }
+            */
+            .abs-box {
+                height:400px;
+                width: 400px;
+                background-color: yellow;
+                position: relative;
+            }
+            .abs-child {
+                height:100px;
+                width: 100px;
+                background-color: green;
+                position: absolute;
+                right : 0;
+                top:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Position fixed : 스크롤해도 볼 수 있음
+        <div id="boxOne">
+            <div class="box-child"></div>
+        </div>
+        <div id="boxTwo">
+            <div class="box-child"></div>
+        </div>
+        -->
+
+        <!-- Position absolute : 어디에든 붙일 수 있지만 스크롤한다고 볼 수 없음. 
+        부모 element에 상대적으로 사용하려면 부모 element position을 relative로 설정해줘야 함  -->
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+      
+      
+    </body>
+</html>

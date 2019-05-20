@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Flexbox</title>   
+        <style>
+            html, body {
+                height: 100%;
+            }
+            /**flex-direction이 raw인 경우, justify-content는 수평으로 적용, align-items는 수직으로 적용
+            flex-direction이 column인 경우, justify-content는 수직으로 적용, align-items는 수평으로 적용 
+            */
+            .father {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                height:100%;
+                flex-direction: row-reverse;
+                flex-wrap: wrap-reverse;
+
+                
+            }
+            .box{
+                background-color: red;
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        </style>
+    </head>
+    <!-- flex를 사용할 때는 칠드런 박스에 적용하지 않고 오직 부모 클래스에만 적용하면 됨
+    칠드런에 디스플레이를 인라인-블록이라고 적지도 않았는데 인라인-블록 방식으로 출력됨
+    플렉스를 빼면 블록이되버림..(공간 차지하는), 넣으면 인라인-블록
+-->
+    <body>
+        <div class="father">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+        </div>
+    </body>
+</html>
